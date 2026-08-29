@@ -1,977 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Ahad Interiors — premium interior finishing and furnishing solutions including wallpapers, flooring, curtains, blinds, sofa poshish and wall panelling."
-  />
+    <title>Ahad Interiors | Transforming Space, Creating Comfort</title>
 
-  <title>Ahad Interiors | Transforming Space, Creating Comfort</title>
+    <meta name="description" content="Ahad Interiors - Premium interior finishing solutions including wallpapers, wooden flooring, vinyl flooring, curtains, blinds, sofa poshish and wall panelling.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="announcement">
-    <div class="announcement-track" id="announcementTrack">
-      <span>Premium Interior Finishing Solutions</span>
-      <span>Explore Wallpapers, Flooring, Curtains & More</span>
-      <span>Transforming Space, Creating Comfort</span>
+<!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+    <div class="loader-logo">
+        <img src="ahad-logo.png" alt="Ahad Interiors">
     </div>
-  </div>
+    <div class="loader-line"></div>
+</div>
 
 
-  <!-- HEADER -->
-  <header class="site-header" id="siteHeader">
+<!-- ================= NAVIGATION ================= -->
 
-    <a class="brand" href="#home" aria-label="Ahad Interiors home">
-      <img
-        src="assets/ahad-logo.jpg"
-        alt="Ahad Interiors official logo"
-      />
+<header class="navbar" id="navbar">
+
+    <a href="#home" class="brand">
+        <img src="ahad-logo.png" alt="Ahad Interiors Logo">
     </a>
 
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#samples">Samples</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#samples">Samples</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <a class="header-cta" href="#contact">
-      Get a Quote
+    <a class="nav-quote" href="#contact">
+        Get a Quote
     </a>
 
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      aria-label="Open menu"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+        <span></span>
+        <span></span>
     </button>
 
-  </header>
+</header>
 
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+<!-- ================= MOBILE MENU ================= -->
 
-    <button
-      class="menu-close"
-      id="menuClose"
-      aria-label="Close menu"
-    >
-      ×
-    </button>
+<div class="mobile-menu" id="mobileMenu">
 
-    <img
-      src="assets/ahad-logo.jpg"
-      alt="Ahad Interiors logo"
-      class="mobile-logo"
-    />
+    <button class="close-menu" id="closeMenu">×</button>
 
-    <nav aria-label="Mobile navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#samples">Samples</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="mobile-menu-inner">
 
-    <a
-      class="mobile-whatsapp"
-      href="https://wa.me/923088800140?text=Hello%20Ahad%20Interiors%2C%20I%20would%20like%20to%20discuss%20an%20interior%20requirement."
-      target="_blank"
-      rel="noopener"
-    >
-      Chat on WhatsApp
-    </a>
+        <span class="menu-small-title">AHAD INTERIORS</span>
 
-  </div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#samples">Samples</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-  <div class="menu-backdrop" id="menuBackdrop"></div>
+        <a class="mobile-whatsapp"
+           href="https://wa.me/923088800140"
+           target="_blank">
+            Chat on WhatsApp
+        </a>
+
+    </div>
+
+</div>
 
 
-  <main>
+<main>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
 
-      <div class="hero-slides" id="heroSlides"></div>
+<!-- ================= HERO ================= -->
 
-      <div class="hero-overlay"></div>
+<section class="hero" id="home">
 
-      <div class="hero-content reveal">
+    <div class="hero-slides">
 
-        <p class="eyebrow">
-          AHAD INTERIORS
-        </p>
+        <div class="hero-slide active"
+             style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=90');">
+        </div>
+
+        <div class="hero-slide"
+             style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=90');">
+        </div>
+
+        <div class="hero-slide"
+             style="background-image:url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=2200&q=90');">
+        </div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            PREMIUM INTERIOR FINISHING
+        </span>
 
         <h1>
-          Transforming Space,
-          <br>
-          <em>Creating Comfort.</em>
+            Transforming Space,<br>
+            <em>Creating Comfort.</em>
         </h1>
 
-        <p class="hero-copy">
-          Elegant interior finishing and furnishing solutions designed
-          to give every space character, warmth and a refined finish.
-        </p>
-
-        <div class="hero-actions">
-
-          <a
-            class="btn btn-gold"
-            href="#services"
-          >
-            Explore Our Services
-          </a>
-
-          <a
-            class="btn btn-outline"
-            href="#contact"
-          >
-            Get a Quote
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- HERO CONTROLS -->
-      <div class="hero-controls">
-
-        <button
-          id="heroPrev"
-          aria-label="Previous slide"
-        >
-          ←
-        </button>
-
-        <div
-          class="hero-dots"
-          id="heroDots"
-        ></div>
-
-        <button
-          id="heroNext"
-          aria-label="Next slide"
-        >
-          →
-        </button>
-
-      </div>
-
-      <div class="hero-scroll">
-        SCROLL <span>↓</span>
-      </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section
-      class="intro section"
-      id="about"
-    >
-
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          THE AHAD APPROACH
-        </p>
-
-        <h2>
-          Details that
-          <em>define</em> a space.
-        </h2>
-
-      </div>
-
-
-      <div class="intro-grid">
-
-        <div
-          class="intro-image reveal"
-          data-image="about"
-        ></div>
-
-        <div class="intro-copy reveal">
-
-          <p class="lead">
-            Ahad Interiors brings together carefully selected
-            interior finishes and furnishing solutions for spaces
-            that deserve a distinctive identity.
-          </p>
-
-          <p>
-            From statement walls and elegant flooring to tailored
-            window treatments, upholstery and decorative panelling,
-            explore a coordinated collection designed around
-            modern interiors.
-          </p>
-
-          <a
-            class="text-link"
-            href="#services"
-          >
-            Discover our services
-            <span>↗</span>
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-    <section
-      class="services section"
-      id="services"
-    >
-
-      <div class="section-heading centered reveal">
-
-        <p class="eyebrow">
-          WHAT WE OFFER
-        </p>
-
-        <h2>
-          Seven ways to
-          <em>transform</em> your interior.
-        </h2>
-
-      </div>
-
-
-      <div class="service-carousel-wrap">
-
-        <button
-          class="carousel-arrow left"
-          id="servicePrev"
-          aria-label="Previous services"
-        >
-          ←
-        </button>
-
-        <div
-          class="service-carousel"
-          id="serviceCarousel"
-        ></div>
-
-        <button
-          class="carousel-arrow right"
-          id="serviceNext"
-          aria-label="Next services"
-        >
-          →
-        </button>
-
-      </div>
-
-    </section>
-
-
-    <!-- STATEMENT -->
-    <section class="statement section-dark reveal">
-
-      <div
-        class="statement-image"
-        data-image="statement"
-      ></div>
-
-      <div class="statement-overlay"></div>
-
-      <div class="statement-content">
-
-        <p class="eyebrow">
-          DESIGN WITH PURPOSE
-        </p>
-
-        <h2>
-          Make the walls speak.
-          <br>
-          <em>Let the room feel complete.</em>
-        </h2>
-
-        <a
-          class="btn btn-gold"
-          href="#samples"
-        >
-          Explore Collection
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- SAMPLES -->
-    <section
-      class="samples section"
-      id="samples"
-    >
-
-      <div class="section-heading centered reveal">
-
-        <p class="eyebrow">
-          SAMPLES & COLLECTIONS
-        </p>
-
-        <h2>
-          Find your
-          <em>finish.</em>
-        </h2>
-
         <p>
-          Browse a curated visual collection across all seven
-          Ahad Interiors categories.
+            Elegant interior finishing and furnishing solutions
+            designed to give every space character, warmth and
+            a refined finish.
         </p>
 
-      </div>
-
-
-      <div
-        class="filter-tabs reveal"
-        id="filterTabs"
-      ></div>
-
-      <div
-        class="gallery"
-        id="gallery"
-      ></div>
-
-      <button
-        class="load-more"
-        id="loadMore"
-      >
-        Load more designs
-      </button>
-
-    </section>
-
-
-    <!-- FLOORING FEATURE -->
-    <section class="feature feature-light section">
-
-      <div class="feature-grid">
-
-        <div class="feature-copy reveal">
-
-          <p class="eyebrow">
-            FLOORING
-          </p>
-
-          <h2>
-            Warmth beneath
-            <br>
-            <em>every step.</em>
-          </h2>
-
-          <p>
-            Explore wooden and vinyl flooring looks ranging
-            from calm natural tones to contemporary statement finishes.
-          </p>
-
-          <a
-            class="text-link"
-            href="#samples"
-            data-category-link="Wooden Flooring"
-          >
-            View flooring samples
-            <span>↗</span>
-          </a>
-
-        </div>
-
-
-        <div
-          class="feature-image reveal"
-          data-image="flooring"
-        ></div>
-
-      </div>
-
-    </section>
-
-
-    <!-- WINDOW FEATURE -->
-    <section class="feature feature-dark section-dark">
-
-      <div class="feature-grid reverse">
-
-        <div
-          class="feature-image reveal"
-          data-image="window"
-        ></div>
-
-        <div class="feature-copy reveal">
-
-          <p class="eyebrow">
-            WINDOW FINISHES
-          </p>
-
-          <h2>
-            Light, privacy &
-            <br>
-            <em>elegance.</em>
-          </h2>
-
-          <p>
-            Layer a room with curtains and blinds that complement
-            the architecture, furniture and mood of the space.
-          </p>
-
-          <a
-            class="text-link light-link"
-            href="#samples"
-            data-category-link="Curtains"
-          >
-            Explore window finishes
-            <span>↗</span>
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section
-      class="projects section"
-      id="projects"
-    >
-
-      <div class="section-heading centered reveal">
-
-        <p class="eyebrow">
-          INTERIOR INSPIRATIONS
-        </p>
-
-        <h2>
-          Ideas made
-          <em>visual.</em>
-        </h2>
-
-        <p>
-          AI-generated design inspirations showing how Ahad Interiors
-          services can work together in a finished space.
-        </p>
-
-      </div>
-
-
-      <div
-        class="project-grid"
-        id="projectGrid"
-      ></div>
-
-    </section>
-
-
-    <!-- WHY AHAD -->
-    <section class="why section-dark">
-
-      <div class="why-inner">
-
-        <div class="section-heading reveal">
-
-          <p class="eyebrow">
-            WHY AHAD INTERIORS
-          </p>
-
-          <h2>
-            A refined finish is
-            <br>
-            <em>in the details.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="why-list">
-
-          <div class="why-item reveal">
-
-            <span>01</span>
-
-            <div>
-
-              <h3>
-                Quality-focused finishing
-              </h3>
-
-              <p>
-                A careful approach to materials,
-                installation and final presentation.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item reveal">
-
-            <span>02</span>
-
-            <div>
-
-              <h3>
-                Variety of designs
-              </h3>
-
-              <p>
-                Multiple styles, textures, tones and finishes
-                for different interior moods.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item reveal">
-
-            <span>03</span>
-
-            <div>
-
-              <h3>
-                Attention to detail
-              </h3>
-
-              <p>
-                Small visual decisions are treated as part
-                of the overall design.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="why-item reveal">
-
-            <span>04</span>
-
-            <div>
-
-              <h3>
-                One place for multiple finishes
-              </h3>
-
-              <p>
-                Coordinate walls, floors, windows, upholstery
-                and panelling in one visual direction.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section
-      class="contact section"
-      id="contact"
-    >
-
-      <div class="contact-grid">
-
-        <div class="contact-copy reveal">
-
-          <p class="eyebrow">
-            LET'S CREATE
-          </p>
-
-          <h2>
-            Your space.
-            <br>
-            <em>Your statement.</em>
-          </h2>
-
-          <p>
-            Tell us what you are looking for and start a conversation
-            about your interior requirement.
-          </p>
-
-
-          <div class="contact-details">
-
-            <a
-              href="https://wa.me/923088800140"
-              target="_blank"
-              rel="noopener"
-            >
-              <span>WhatsApp</span>
-              03088800140
+        <div class="hero-buttons">
+
+            <a href="#services" class="btn btn-gold">
+                Explore Services
+                <span>↗</span>
             </a>
 
-            <a
-              href="https://wa.me/923135300056"
-              target="_blank"
-              rel="noopener"
-            >
-              <span>WhatsApp</span>
-              03135300056
+            <a href="#contact" class="btn btn-outline">
+                Get a Quote
             </a>
-
-            <a
-              href="mailto:younasawan245@gmail.com"
-            >
-              <span>Email</span>
-              younasawan245@gmail.com
-            </a>
-
-          </div>
 
         </div>
-
-
-        <!-- CONTACT FORM -->
-        <form
-          class="contact-form reveal"
-          id="contactForm"
-        >
-
-          <div class="form-row">
-
-            <label>
-              Name
-
-              <input
-                name="name"
-                type="text"
-                placeholder="Your name"
-                required
-              />
-
-            </label>
-
-
-            <label>
-              Phone Number
-
-              <input
-                name="phone"
-                type="tel"
-                placeholder="03XXXXXXXXX"
-                required
-              />
-
-            </label>
-
-          </div>
-
-
-          <div class="form-row">
-
-            <label>
-              Email
-
-              <input
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-              />
-
-            </label>
-
-
-            <label>
-              Required Service
-
-              <select
-                name="service"
-                required
-              >
-
-                <option value="">
-                  Select a service
-                </option>
-
-                <option>
-                  Wallpapers
-                </option>
-
-                <option>
-                  Wooden Flooring
-                </option>
-
-                <option>
-                  Vinyl Flooring
-                </option>
-
-                <option>
-                  Curtains
-                </option>
-
-                <option>
-                  All Types of Blinds
-                </option>
-
-                <option>
-                  Sofa Poshish
-                </option>
-
-                <option>
-                  Wall Panelling
-                </option>
-
-              </select>
-
-            </label>
-
-          </div>
-
-
-          <label>
-            Message
-
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Tell us about your requirement..."
-              required
-            ></textarea>
-
-          </label>
-
-
-          <button
-            class="btn btn-gold form-submit"
-            type="submit"
-          >
-            Send Enquiry
-            <span>↗</span>
-          </button>
-
-
-          <p class="form-note">
-            Submitting opens WhatsApp with your enquiry details,
-            so you can send the request directly.
-          </p>
-
-          <p
-            class="form-status"
-            id="formStatus"
-            role="status"
-          ></p>
-
-        </form>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <div class="footer-top">
-
-      <img
-        src="assets/ahad-logo.jpg"
-        alt="Ahad Interiors official logo"
-        class="footer-logo"
-      />
-
-
-      <div>
-
-        <p class="footer-label">
-          EXPLORE
-        </p>
-
-        <a href="#services">
-          Services
-        </a>
-
-        <a href="#samples">
-          Samples
-        </a>
-
-        <a href="#projects">
-          Inspirations
-        </a>
-
-      </div>
-
-
-      <div>
-
-        <p class="footer-label">
-          SERVICES
-        </p>
-
-        <a
-          href="#samples"
-          data-category-link="Wallpapers"
-        >
-          Wallpapers
-        </a>
-
-        <a
-          href="#samples"
-          data-category-link="Wooden Flooring"
-        >
-          Wooden Flooring
-        </a>
-
-        <a
-          href="#samples"
-          data-category-link="Curtains"
-        >
-          Curtains
-        </a>
-
-        <a
-          href="#samples"
-          data-category-link="Wall Panelling"
-        >
-          Wall Panelling
-        </a>
-
-      </div>
-
-
-      <div>
-
-        <p class="footer-label">
-          CONTACT
-        </p>
-
-        <a
-          href="https://wa.me/923088800140"
-          target="_blank"
-          rel="noopener"
-        >
-          03088800140
-        </a>
-
-        <a
-          href="https://wa.me/923135300056"
-          target="_blank"
-          rel="noopener"
-        >
-          03135300056
-        </a>
-
-        <a href="mailto:younasawan245@gmail.com">
-          younasawan245@gmail.com
-        </a>
-
-      </div>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div class="hero-bottom">
 
-      <span>
-        © <span id="year"></span>
-        Ahad Interiors. All rights reserved.
-      </span>
+        <div class="hero-counter">
+            <strong id="slideNumber">01</strong>
+            <span>/ 03</span>
+        </div>
 
-      <a href="#home">
-        Back to top ↑
-      </a>
+        <div class="hero-dots">
+            <button class="dot active"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
+
+        <div class="scroll-text">
+            SCROLL ↓
+        </div>
 
     </div>
 
-  </footer>
+</section>
 
 
-  <!-- FLOATING WHATSAPP -->
-  <a
-    class="floating-wa"
-    href="https://wa.me/923088800140?text=Hello%20Ahad%20Interiors%2C%20I%20would%20like%20to%20discuss%20an%20interior%20requirement."
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with Ahad Interiors on WhatsApp"
-  >
-    WA
-  </a>
+<!-- ================= INTRO ================= -->
+
+<section class="intro section" id="about">
+
+    <div class="section-label">
+        <span>01</span>
+        <span>THE AHAD APPROACH</span>
+    </div>
+
+    <div class="intro-grid">
+
+        <div class="intro-heading">
+
+            <h2>
+                Details that <em>define</em> a space.
+            </h2>
+
+        </div>
+
+        <div class="intro-text">
+
+            <p>
+                Ahad Interiors brings together carefully selected
+                interior finishes and furnishing solutions for spaces
+                that deserve a distinctive identity.
+            </p>
+
+            <p>
+                From statement walls and elegant flooring to tailored
+                window treatments, upholstery and decorative panelling,
+                explore a coordinated collection designed around
+                modern interiors.
+            </p>
+
+            <a href="#services" class="text-link">
+                Discover our services
+                <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-  <!-- LIGHTBOX -->
-  <div
-    class="lightbox"
-    id="lightbox"
-    aria-hidden="true"
-  >
+<!-- ================= SERVICES ================= -->
 
-    <button
-      id="lightboxClose"
-      aria-label="Close image"
-    >
-      ×
-    </button>
+<section class="services section" id="services">
 
-    <button
-      id="lightboxPrev"
-      aria-label="Previous image"
-    >
-      ←
-    </button>
+    <div class="section-label">
+        <span>02</span>
+        <span>WHAT WE OFFER</span>
+    </div>
 
-    <figure>
+    <div class="section-heading">
 
-      <img
-        id="lightboxImage"
-        alt=""
-      />
+        <h2>
+            Seven ways to <em>transform</em><br>
+            your interior.
+        </h2>
 
-      <figcaption
-        id="lightboxCaption"
-      ></figcaption>
+        <p>
+            Explore our carefully selected interior finishing
+            solutions, created to bring texture, comfort and
+            character into your space.
+        </p>
 
-    </figure>
-
-    <button
-      id="lightboxNext"
-      aria-label="Next image"
-    >
-      →
-    </button>
-
-  </div>
+    </div>
 
 
-  <script src="script.js"></script>
+    <div class="services-grid">
 
-</body>
-</html>
+
+        <!-- WALLPAPERS -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=90"
+                    alt="Luxury wallpaper interior"
+                    loading="lazy">
+
+                <span class="service-number">01</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Wallpapers</h3>
+
+                <p>
+                    Textures, patterns and feature-wall designs
+                    for expressive interiors.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- WOODEN FLOORING -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=90"
+                    alt="Wooden flooring interior"
+                    loading="lazy">
+
+                <span class="service-number">02</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Wooden Flooring</h3>
+
+                <p>
+                    Natural-looking grains, warm tones and
+                    refined flooring layouts.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- VINYL FLOORING -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=90"
+                    alt="Vinyl flooring interior"
+                    loading="lazy">
+
+                <span class="service-number">03</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Vinyl Flooring</h3>
+
+                <p>
+                    Practical, stylish flooring solutions with
+                    contemporary visual appeal.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- CURTAINS -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=1200&q=90"
+                    alt="Elegant curtains interior"
+                    loading="lazy">
+
+                <span class="service-number">04</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Curtains</h3>
+
+                <p>
+                    Elegant window treatments tailored to
+                    complement the character of your room.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- BLINDS -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=90"
+                    alt="Modern window blinds"
+                    loading="lazy">
+
+                <span class="service-number">05</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>All Types of Blinds</h3>
+
+                <p>
+                    Modern blind solutions combining privacy,
+                    light control and refined design.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- SOFA POSHISH -->
+
+        <article class="service-card">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=90"
+                    alt="Luxury upholstered sofa"
+                    loading="lazy">
+
+                <span class="service-number">06</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Sofa Poshish</h3>
+
+                <p>
+                    Upholstery and sofa finishing that refresh
+                    furniture with comfort and character.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- WALL PANELLING -->
+
+        <article class="service-card featured-service">
+
+            <div class="service-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=1400&q=90"
+                    alt="Luxury wall panelling"
+                    loading="lazy">
+
+                <span class="service-number">07</span>
+
+                <div class="service-overlay"></div>
+
+            </div>
+
+            <div class="service-content">
+
+                <h3>Wall Panelling</h3>
+
+                <p>
+                    Architectural wall treatments adding depth,
+                    texture and sophistication.
+                </p>
+
+                <a href="#samples" class="text-link">
+                    View Samples ↗
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SAMPLES ================= -->
+
+<section class="samples section" id="samples">
+
+    <div class="section-label">
+        <span>03</span>
+        <span>OUR COLLECTION</span>
+    </div>
+
+    <div class="samples-header">
+
+        <div>
+
+            <h2>
+                Explore our <em>samples.</em>
+            </h2>
+
+            <p>
+                A visual collection of textures, finishes and
+                furnishings selected for modern spaces.
+            </p>
+
+        </div>
+
+        <div class="sample-filter">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="wallpapers">
+                Wallpapers
+            </button>
+
+            <button class="filter" data-filter="flooring">
+                Flooring
+            </button>
+
+            <button class="filter" data-filter="curtains">
+                Curtains
+            </button>
+
+            <button class="filter" data-filter="blinds">
+                Blinds
+            </button>
+
+            <button class="filter" data-filter="upholstery">
+                Sofa
+            </button>
+
+            <button class="filter" data-filter="panelling">
+                Panelling
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <div class="gallery-item tall" data-category="wallpapers">
+
+            <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=90" alt="Wallpaper design">
+
+            <div class="gallery-caption">
+                <span>01</span>
+                <h3>Wallpapers</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item" data-category="flooring">
+
+            <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1000&q=90" alt="Wooden flooring">
+
+            <div class="gallery-caption">
+                <span>02</span>
+                <h3>Wooden Flooring</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item" data-category="flooring">
+
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=90" alt="Modern flooring">
+
+            <div class="gallery-caption">
+                <span>03</span>
+                <h3>Vinyl Flooring</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item" data-category="curtains">
+
+            <img src="https://images.unsplash.com/photo-1618221710640-c0eaaa2adb49?auto=format&fit=crop&w=1000&q=90" alt="Curtain design">
+
+            <div class="gallery-caption">
+                <span>04</span>
+                <h3>Curtains</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item wide" data-category="blinds">
+
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=90" alt="Window blinds">
+
+            <div class="gallery-caption">
+                <span>05</span>
+                <h3>Blinds</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item" data-category="upholstery">
+
+            <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=90" alt="Sofa upholstery">
+
+            <div class="gallery-caption">
+                <span>06</span>
+                <h3>Sofa Poshish</h3>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item" data-category="panelling">
+
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1000&q=90" alt="Wall panelling">
+
+            <div class="gallery-caption">
+                <span>07</span>
+                <h3>Wall Panelling</h3>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects section" id="projects">
+
+    <div class="section-label">
+        <span>04</span>
+        <span>PROJECTS & INSPIRATION</span>
+    </div>
+
+    <div class="project-intro">
+
+        <h2>
+            Spaces designed to<br>
+            <em>feel like yours.</em>
+        </h2>
+
+        <p>
+            Every room has its own character. Our finishing solutions
+            are selected to create a balanced relationship between
+            texture, colour, comfort and architecture.
+        </p>
+
+    </div>
+
+
+    <div class="project-showcase">
+
+        <div class="project-large">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=90"
+                alt="Luxury interior">
+
+            <div class="project-info">
+
+                <span>INTERIOR FINISHING</span>
+
+                <h3>
+                    Refined spaces.<br>
+                    Thoughtful details.
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-side">
+
+            <div class="project-small">
+
+                <img
+                    src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1000&q=90"
+                    alt="Modern interior">
+
+            </div>
+
+            <div class="project-small">
+
+                <img
+                    src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=1000&q=90"
+                    alt="Elegant window treatment">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY AHAD ================= -->
+
+<section class="why section">
+
+    <div class="section-label">
+        <span>05</span>
+        <span>WHY AHAD INTERIORS</span>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-title">
+
+            <h2>
+                Finish with<br>
+                <em>confidence.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="why-items">
+
+            <div class="why-item">
+
+                <span>01</span>
+
+                <div>
+                    <h3>Quality Materials</h3>
+                    <p>
+                        Carefully selected finishing materials
+                        for a refined result.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <span>02</span>
+
+                <div>
+                    <h3>Modern Designs</h3>
+                    <p>
+                        Contemporary textures, patterns and
+                        finishes for today's interiors.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <span>03</span>
+
+                <div>
+                    <h3>Professional Finishing</h3>
+                    <p>
+                        Attention to detail from selection
+                        through to the finished space.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <span>04</span>
+
+                <div>
+                    <h3>Customer Focused</h3>
+                    <p>
+                        Solutions selected around your space,
+                        preferences and requirements.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="cta-background"></div>
+
+    <div class="cta-content">
+
+        <span class="eyebrow">
+            LET'S TRANSFORM YOUR SPACE
+        </span>
+
+        <h2>
+            Your space deserves<br>
+            <em>the right finish.</em>
+        </h2>
+
+        <p>
+            Discuss your interior finishing requirements
+            with Ahad Interiors.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a
+                href="https://wa.me/923088800140"
+                target="_blank"
+                class="btn btn-gold">
+                WhatsApp Us
+                <span>↗</span>
+            </a>
+
+            <a
